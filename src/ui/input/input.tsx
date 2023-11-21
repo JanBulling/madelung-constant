@@ -46,5 +46,6 @@ const Input = React.forwardRef<
     {error && <p className='text-xs text-destructive'>{error}</p>}
   </>
 ));
+Input.displayName = "Input";
 
 export { Input };

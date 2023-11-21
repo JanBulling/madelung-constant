@@ -13,21 +13,21 @@ const PasswordInput = React.forwardRef<
   return (
     <Input
       ref={ref}
-      icon={props.icon && <Icon icon="Lock" />}
+      icon={props.icon && <Icon icon='Lock' />}
       type={visible ? "text" : "password"}
       right={
         visible ? (
           <Icon
-            icon="Eye"
-            size="16"
-            className="cursor-pointer text-foreground hover:scale-105"
+            icon='Eye'
+            size='16'
+            className='cursor-pointer text-foreground hover:scale-105'
             onClick={() => setVisible(false)}
           />
         ) : (
           <Icon
-            icon="EyeOff"
-            size="16"
-            className="cursor-pointer text-foreground hover:scale-105"
+            icon='EyeOff'
+            size='16'
+            className='cursor-pointer text-foreground hover:scale-105'
             onClick={() => setVisible(true)}
           />
         )
@@ -36,5 +36,6 @@ const PasswordInput = React.forwardRef<
     />
   );
 });
+PasswordInput.displayName = "PasswordInput";
 
 export { PasswordInput };

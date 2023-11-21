@@ -20,8 +20,9 @@ const Label = React.forwardRef<
     {...props}
   >
     {children}
-    {required && <span className="text-sm text-destructive">*</span>}
+    {required && <span className='text-sm text-destructive'>*</span>}
   </label>
 ));
+Label.displayName = "Label";
 
 export { Label };

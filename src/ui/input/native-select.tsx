@@ -19,5 +19,6 @@ const NativeSelect = React.forwardRef<
     )}
   />
 ));
+NativeSelect.displayName = "Select";
 
 export { NativeSelect };
